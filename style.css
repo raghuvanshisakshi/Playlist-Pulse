@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&family=Ubuntu:ital,wght@0,700;1,500&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    /* it is used for ki dot dot na dikhe */
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+  padding: 0 12px;  
+}
+.brand img{
+    width: 72px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    /* this is used for only the size of box */
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    /* here auto is used for center */
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('music2.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    /* here position is sticky thats why we use bottom 0 */
+    bottom: 0;
+    /* this all used for progressbar center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column ;
+}
+.icons{
+    margin: 14px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    /* text-align: center; */
+}
+.songItem{
+    height: 40px;
+    display: flex;
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 23px;
+}
+.songItem img{
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 40px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.songInfo img{
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
